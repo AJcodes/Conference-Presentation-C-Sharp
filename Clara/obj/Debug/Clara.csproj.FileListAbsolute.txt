@@ -1,0 +1,6 @@
+C:\Projects\Clara\Clara\Clara\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Clara\Clara\Clara\obj\Debug\MainWindow.g.cs
+C:\Projects\Clara\Clara\Clara\obj\Debug\App.g.cs
+C:\Projects\Clara\Clara\Clara\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projects\Clara\Clara\Clara\obj\Debug\Clara_MarkupCompile.cache
+C:\Projects\Clara\Clara\Clara\obj\Debug\Clara_MarkupCompile.lref

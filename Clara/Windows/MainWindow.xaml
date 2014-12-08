@@ -1,0 +1,25 @@
+﻿<Window x:Class="Clara.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Core="clr-namespace:Clara.Controls" Closing="WindowClosing" Loaded="WindowLoaded" MouseLeftButtonUp="WindowMouseLeftButtonUp" MouseMove="Window_MouseMove" SourceInitialized="WindowSourceInitialized"
+        Height="350" Width="350" Background="Purple" ResizeMode="NoResize" WindowStyle="None">
+    <Grid x:Name="Root">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Core:DragScrollViewer x:Name="DragScroll" Grid.Row="1" DragEverywhere="true" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled">
+                <Grid x:Name="WidgetsContainer" Margin="118,0,0,0">
+                    <WindowsFormsHost  Name="windowsFormsHost1" />
+
+                    
+                </Grid>
+            </Core:DragScrollViewer>
+            
+        </Grid>
+    </Grid>
+
+</Window>

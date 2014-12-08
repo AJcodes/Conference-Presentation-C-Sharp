@@ -1,0 +1,35 @@
+﻿<Window x:Class="Clara.HostForms.DrawScreen"
+        xmlns:Core="clr-namespace:Clara.Controls" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        mc:Ignorable="d" 
+        d:DesignHeight="1000" d:DesignWidth="900" Background="White" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <InkCanvas Name="DrawingPad" Background="White"/>
+        <Grid Background="Transparent" Margin="0,0,0,0"  Height="90" Width="270" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Image Name="Close"
+                        Width="50"
+                        Margin="20,20,0,0"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Left"
+                        MouseLeftButtonUp="Close_MouseLeftButtonUp"
+                        Source="/Clara;component/Resources/backblack.png" />
+            <Image Name="Erase"
+                        Width="50"
+                        Margin="90,20,0,0"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Left"
+                        MouseLeftButtonUp="Erase_MouseLeftButtonUp"
+                        Source="/Clara;component/Resources/delblack.png" />
+            <Image Name="Draw"
+                        Width="50"
+                        Margin="160,20,0,0"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Left"
+                        MouseLeftButtonUp="Draw_MouseLeftButtonUp"
+                        Source="/Clara;component/Resources/draw.png" />
+        </Grid>
+    </Grid>
+</Window>

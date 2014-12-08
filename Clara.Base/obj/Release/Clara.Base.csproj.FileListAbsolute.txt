@@ -1,0 +1,16 @@
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\Clara\Clara\Clara.Base\bin\Release\Clara.Base.dll
+C:\Projects\Clara\Clara\Clara.Base\bin\Release\Clara.Base.pdb
+C:\Projects\Clara\Clara\Clara.Base\bin\Release\iFr.Helper.dll
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Clara.Base.dll
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Clara.Base.pdb
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Resources\Colors.baml
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Resources\MetroButton.baml
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Resources\MetroCheckBox.baml
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Resources\MetroComboBox.baml
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Resources\MetroPasswordBox.baml
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Resources\MetroRadioButton.baml
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Resources\MetroTextBox.baml
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Resources\TabControlGlass.baml
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Clara.Base_MarkupCompile.cache
+C:\Projects\Clara\Clara\Clara.Base\obj\Release\Clara.Base.g.resources

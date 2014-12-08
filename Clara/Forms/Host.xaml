@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="Clara.Forms.Host"
+             xmlns:Core="clr-namespace:Clara.Controls" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="900" Background="DimGray" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <Storyboard x:Key="SwitchPictureAnim">
+            <DoubleAnimation Storyboard.TargetName="PictureTranslate" Storyboard.TargetProperty="X" From="550" To="0" Duration="0:0:0.9" AccelerationRatio="0.5" FillBehavior="Stop"/>
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid Name="mainGrid">
+        <Grid Name="canvas" VerticalAlignment="Top" Margin="0,0,0,0" Height="61">
+            <TextBlock Name="mainmenu" Margin="20,25,0,0" HorizontalAlignment="Left" FontSize="18" Text="Main Menu" Foreground="White" MouseLeftButtonUp="mainmenu_MouseLeftButtonUp"/>
+            <Separator HorizontalAlignment="Stretch" Margin="0,60,0,0" BorderBrush="Black" />
+            <Image Name="Close"
+                        Width="20"
+                        Margin="0,0,10,0"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        MouseLeftButtonUp="Close_MouseLeftButtonUp"
+                        Source="/Clara;component/Resources/close.png" />
+            <Image Name="Minimize"
+                        Width="20"
+                        Margin="0,0,35,0"
+                    VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        MouseLeftButtonUp="Minimize_MouseLeftButtonUp"
+                        Source="/Clara;component/Resources/minimize.png" />
+
+        </Grid>
+        <Grid Margin="0,61,250,0">
+            <Grid ClipToBounds="True" VerticalAlignment="Top" Margin="20,20,10,0" Height="550" Width="550">
+                <Border BorderBrush="Black" BorderThickness="3"/>
+                <Image Name="BackgroundT" Stretch="Uniform"/>
+            <Image Name="ThumbnailImage" Stretch="Uniform" >
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="PictureTranslate"/>
+                </Image.RenderTransform>
+            </Image>
+                
+            </Grid>
+            <Image Name="Back" Height="50" Width="50" VerticalAlignment="Bottom" Margin="-195,0,0,20" Source="/Clara;component/Resources/Back.png" MouseLeftButtonUp="Back_MouseLeftButtonUp"/>
+            <TextBlock Name="slidetext" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,30" FontSize="20" Foreground="White" Text="Slide 1 of 58"/>
+            <Image Name="Next" Height="50" Width="50" VerticalAlignment="Bottom" Margin="195,0,0,20" Source="/Clara;component/Resources/Next.png" MouseLeftButtonUp="Next_MouseLeftButtonUp"/>
+            <Image Name="Fullscreen" Height="50" Width="50" VerticalAlignment="Top" Margin="-620,520,0,0" Source="/Clara;component/Resources/Search.png" MouseLeftButtonUp="Fullscreen_MouseLeftButtonUp"/>
+            <Image Name="Edit" Height="50" Width="50" VerticalAlignment="Top" Margin="-620,460,0,0" Source="/Clara;component/Resources/Edit.png" MouseLeftButtonUp="Edit_MouseLeftButtonUp"/>
+        </Grid>
+
+        <Core:DragScrollViewer x:Name="DragScroll" Width="250" HorizontalAlignment="Right"  Margin="0,61,0,0" DragEverywhere="true" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
+            <Grid Name="FileContainer" Background="DarkGray" ClipToBounds="True">
+
+            </Grid>
+        </Core:DragScrollViewer>
+    </Grid>
+</UserControl>

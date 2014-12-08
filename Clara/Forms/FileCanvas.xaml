@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Clara.Forms.FileCanvas"
+             xmlns:Core="clr-namespace:Clara.Controls" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:Height="300" d:Width="300">
+    <Grid>
+        <Core:DragScrollViewer x:Name="DragScroll2" DragEverywhere="true" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+            <Grid x:Name="Container2" >
+                <Border Margin="0,0,0,0" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Stretch"/>
+                <StackPanel Name="FilePanels" Orientation="Vertical" />
+                <Canvas Name="DragCanvas2" />
+            </Grid>
+        </Core:DragScrollViewer>
+    </Grid>
+</UserControl>
